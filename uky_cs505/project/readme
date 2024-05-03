@@ -81,4 +81,6 @@ CODE HELP REFERENCES:
 -----------------------------------
 
 1. https://github.com/Unity-Technologies/mysql-connector-python/blob/master/lib/mysql/connector/connection.py
+2. https://gist.github.com/techouse/4deb94eee58a02d104c6?permalink_comment_id=4356734
+3. https://github.com/majidalavizadeh/sqlite-to-mysql
 
