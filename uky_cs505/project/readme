@@ -7,10 +7,10 @@ choice for local databases, MySQL is often preferred for larger-scale applicatio
 tool enables users to seamlessly migrate data and schema structures from SQLite to MySQL.
 
 ## Input
-The notebook requires a list of SQLite database files as input. Commonly used files
-include: TPCH-3K.db, TPCH-6K.db, TPCH-12K.db, TPCH-120K.db. SQLite databases are
+The notebook requires a list of SQLite database files (.db) as input. For our purpose we
+are includeing: TPCH-3K.db, TPCH-6K.db, TPCH-12K.db, TPCH-120K.db. SQLite databases are
 characterized by their .db extension and are supported by SQLite and similar database
-systems.
+systems, but not directly supported by MySQL.
 
 ## Purpose
 MySQL does not natively support .db files. Hence, this program converts SQLite .db files
