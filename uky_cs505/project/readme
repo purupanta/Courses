@@ -1,17 +1,26 @@
-readme for "SQLiteToMySQL.ipynb"
-======================================
-"SQLiteToMySQL"
+# README for "SQLiteToMySQL.ipynb"
 
-Input:
-This file takes a list of ".db" files (TPCH-3K.db, TPCH-6K.db, TPCH-12K.db, TPCH-120K.db) as input. The ".db" files are generally database files mainly supported by sqlite and simmilar databases.
-MySQL do not support ".db" file. So, this program converts these ".db" files to ".sql" files containing all sql commands, so that we can easily import the schema structure and data in MySQL.
+## Overview
+This notebook, "SQLiteToMySQL", is designed to facilitate the conversion of SQLite database files (.db) into MySQL-compatible SQL files (.sql). While SQLite is a popular choice for local databases, MySQL is often preferred for larger-scale applications. This tool enables users to seamlessly migrate data and schema structures from SQLite to MySQL.
 
-Processing:
+## Input
+The notebook requires a list of SQLite database files as input. Commonly used files include: TPCH-3K.db, TPCH-6K.db, TPCH-12K.db, TPCH-120K.db. SQLite databases are characterized by their .db extension and are supported by SQLite and similar database systems.
 
-data mapping:
-'TEXT': 'TEXT',
-'INTEGER': 'INT',
-'REAL': 'DOUBLE',
-'BLOB': 'LONGBLOB',
-'NULL': 'NULL',
-'NUM' : 'DATE',
+## Purpose
+MySQL does not natively support .db files. Hence, this program converts SQLite .db files into .sql files, which contain SQL commands representing the database schema and data. These generated SQL files can then be easily imported into MySQL, allowing users to replicate the database structure and import datasets seamlessly.
+
+## How to Run
+1. Install Anaconda from [here](https://www.anaconda.com/download/success).
+2. Open Anaconda Navigator and Jupyter Notebook.
+3. Open SQLiteToMySQL.ipynb in Jupyter Notebook.
+4. Adjust the directory configurations and the "dbo" files in the main block of the Python file, '__main__'.
+5. Executing this Python creates converted .sql files for each of the .dbo files, which can then simply run in MySQL to create schema and insert datasets.
+
+## Data Mapping
+When converting datatypes from .db files to the corresponding MySQL datatypes:
+- 'TEXT': 'TEXT'
+- 'INTEGER': 'INT'
+- 'REAL': 'DOUBLE'
+- 'BLOB': 'LONGBLOB'
+- 'NULL': 'NULL'
+- 'NUM' : 'DATE'
