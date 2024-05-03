@@ -36,3 +36,22 @@ mapping is used:
 - 'BLOB': 'LONGBLOB'
 - 'NULL': 'NULL'
 - 'NUM' : 'DATE'
+
+
+
+# README for "tpch_benchmark.ipynb"
+
+Inputs: The following MySQL databases: 'cs505_prj_tpch_3k', 'cs505_prj_tpch_12k', 'cs505_prj_tpch_60k', 'cs505_prj_tpch_120k'.
+the TPC-H query1 through query 22 were stored in MySQL as procedure view in the previous step.
+
+How to execute the TPC-H benchmark queries:
+the TPC-H query1 through query 22 were stored in MySQL as procedure view. The 
+
+standard Query1 through Query22
+Now these views are being executed through the python
+script "tpch_benchmark.ipynb".
+
+and corresponding data import was done in the previous step.
+
+Need to install:  mysql-connector-python
+
