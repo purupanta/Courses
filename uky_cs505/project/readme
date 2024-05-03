@@ -1,66 +1,34 @@
 # README for "SQLiteToMySQL.ipynb"
 
 ## Overview
-This notebook, "SQLiteToMySQL",
-is designed to facilitate the
-conversion of SQLite database
-files (.db) into MySQL-compatible
-SQL files (.sql). While SQLite is
-a popular choice for local
-databases, MySQL is often
-preferred for larger-scale
-applications. This tool enables
-users to seamlessly migrate data
-and schema structures from SQLite
-to MySQL.
+This notebook, "SQLiteToMySQL", is designed to facilitate the conversion of SQLite
+database files (.db) into MySQL-compatible SQL files (.sql). While SQLite is a popular
+choice for local databases, MySQL is often preferred for larger-scale applications. This
+tool enables users to seamlessly migrate data and schema structures from SQLite to MySQL.
 
 ## Input
-The notebook requires a list
-of SQLite database files as
-input. Commonly used files
-include: TPCH-3K.db, TPCH-6K.db,
-TPCH-12K.db, TPCH-120K.db.
-SQLite databases are characterized
-by their .db extension and are
-supported by SQLite and similar
-database systems.
+The notebook requires a list of SQLite database files as input. Commonly used files
+include: TPCH-3K.db, TPCH-6K.db, TPCH-12K.db, TPCH-120K.db. SQLite databases are
+characterized by their .db extension and are supported by SQLite and similar database
+systems.
 
 ## Purpose
-MySQL does not natively support
-.db files. Hence, this program
-converts SQLite .db files into
-.sql files, which contain SQL
-commands representing the
-database schema and data. These
-generated SQL files can then be
-easily imported into MySQL,
-allowing users to replicate
-the database structure and
-import datasets seamlessly.
+MySQL does not natively support .db files. Hence, this program converts SQLite .db files
+into .sql files, which contain SQL commands representing the database schema and data.
+These generated SQL files can then be easily imported into MySQL, allowing users to
+replicate the database structure and import datasets seamlessly.
 
 ## How to Run
-1. Install anaconda from
-   https://www.anaconda.com/
-   download/success
-2. Open anaconda navigator
-   and jupyter notebook.
-3. Open SQLiteToMySQL.ipynb in
-   jupyter notebook.
-4. Adjust the directory
-   configurations and the "dbo"
-   files in the main block of
-   the python file, '__main__'
-5. Executing this python creates
-   converted .sql files for each
-   of the .dbo file, which can
-   then simply run in MySQL to
-   create schema and insert
-   datasets.
+1. Install anaconda from https://www.anaconda.com/download/success
+2. Open anaconda navigator and jupyter notebook.
+3. Open SQLiteToMySQL.ipynb in jupyter notebook.
+4. Adjust the directory configurations and the "dbo" files in the main block of the
+   python file, '__main__'
+5. Executing this python creates converted .sql files for each of the .dbo file, which
+   can then simply run in MySQL to create schema and insert datasets.
 
 ## Data Mapping
-When converting datatypes from
-.db files to the corresponding
-MySQL datatypes:
+When converting datatypes from .db files to the corresponding MySQL datatypes:
 - 'TEXT': 'TEXT'
 - 'INTEGER': 'INT'
 - 'REAL': 'DOUBLE'
