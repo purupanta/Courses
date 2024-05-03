@@ -22,9 +22,9 @@ replicate the database structure and import datasets seamlessly.
 1. Install anaconda from https://www.anaconda.com/download/success
 2. Open anaconda navigator and jupyter notebook.
 3. Open SQLiteToMySQL.ipynb in jupyter notebook.
-4. Adjust the directory configurations and the "dbo" files in the main block of the
+4. Adjust the directory configurations and the ".db" files location in the main block of the
    python file, '__main__'
-5. Executing this python creates converted .sql files for each of the .dbo file, which
+5. Executing this python script creates converted .sql files for each of the .dbo file, which
    can then simply run in MySQL to create schema and insert datasets.
 
 ## Data Mapping
