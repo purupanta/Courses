@@ -74,3 +74,11 @@ the TPC-H query1 through query22 were stored in MySQL as procedure view. The pyt
         'execution_time_s': '',
         'throughput': ''
     }
+
+========================================================================================================================================================================
+
+CODE HELP REFERENCES:
+-----------------------------------
+
+1. https://github.com/Unity-Technologies/mysql-connector-python/blob/master/lib/mysql/connector/connection.py
+
