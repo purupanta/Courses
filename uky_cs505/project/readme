@@ -4,4 +4,4 @@ readme for "SQLiteToMySQL.ipynb"
 
 Input:
 This file takes a list of ".db" files (TPCH-3K.db, TPCH-6K.db, TPCH-12K.db, TPCH-120K.db) as input. The ".db" files are generally database files mainly supported by sqlite and simmilar databases.
-MySQL do not support ".db" file so this program actually converts
+MySQL do not support ".db" file. So, this program converts these ".db" files to ".sql" files containing all sql commands, so that we can easily import the schema structure and data in MySQL.
