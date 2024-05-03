@@ -1,4 +1,5 @@
 # README for "SQLiteToMySQL.ipynb"
+-----------------------------------
 
 ## Overview
 This notebook, "SQLiteToMySQL", is designed to facilitate the conversion of SQLite
@@ -40,6 +41,7 @@ mapping is used:
 ========================================================================================================================================================================
 
 # README for "tpch_benchmark.ipynb"
+-----------------------------------
 
 #Input
 The following MySQL databases: 'cs505_prj_tpch_3k', 'cs505_prj_tpch_12k', 'cs505_prj_tpch_60k', 'cs505_prj_tpch_120k'.
