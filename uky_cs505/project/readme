@@ -44,14 +44,16 @@ mapping is used:
 Inputs: The following MySQL databases: 'cs505_prj_tpch_3k', 'cs505_prj_tpch_12k', 'cs505_prj_tpch_60k', 'cs505_prj_tpch_120k'.
 the TPC-H query1 through query 22 were stored in MySQL as procedure view in the previous step.
 
-How to execute the TPC-H benchmark queries:
-the TPC-H query1 through query 22 were stored in MySQL as procedure view. The 
+Prerequsites: install library "mysql-connector-python" to establish MySQL conneciton through Python:
+!pip install mysql-connector-python
 
-standard Query1 through Query22
-Now these views are being executed through the python
-script "tpch_benchmark.ipynb".
-
-and corresponding data import was done in the previous step.
-
-Need to install:  mysql-connector-python
-
+## How to execute the TPC-H benchmark queries:
+the TPC-H query1 through query22 were stored in MySQL as procedure view. The python script "tpch_benchmark.ipynb"
+1. Install anaconda from https://www.anaconda.com/download/success
+2. Open anaconda navigator and jupyter notebook.
+3. Open tpch_benchmark.ipynb in jupyter notebook.
+4. Adjust the database connectivity with "config" dictionary variable, having host, database username, port, password. In my case MySQL was set up in localhost.
+   Once the conneciton is established, the query string builds up dynamically based on what TPC-H query we are executing.
+5. The python timer measures the time and lets the query execute.
+6. After the query executed, the timer measures the time in seconds again and calculates the time taken to execute the query as:
+   Execution time = end_time - start_time
