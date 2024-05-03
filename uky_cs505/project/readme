@@ -28,7 +28,8 @@ replicate the database structure and import datasets seamlessly.
    can then simply run in MySQL to create schema and insert datasets.
 
 ## Data Mapping
-When converting datatypes from .db files to the corresponding MySQL datatypes:
+When converting datatypes from .db files to the corresponding MySQL datatypes the following 
+mapping is used:
 - 'TEXT': 'TEXT'
 - 'INTEGER': 'INT'
 - 'REAL': 'DOUBLE'
