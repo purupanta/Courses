@@ -37,7 +37,7 @@ mapping is used:
 - 'NULL': 'NULL'
 - 'NUM' : 'DATE'
 
-
+========================================================================================================================================================================
 
 # README for "tpch_benchmark.ipynb"
 
@@ -57,3 +57,12 @@ the TPC-H query1 through query22 were stored in MySQL as procedure view. The pyt
 5. The python timer measures the time and lets the query execute.
 6. After the query executed, the timer measures the time in seconds again and calculates the time taken to execute the query as:
    Execution time = end_time - start_time
+7. The "write_report" function writes the collected a report-tuple into csv file as output.
+   the report_tuple is defined as dictionary and gets populated at each query completes execution:
+   report_tuple = {
+        'query_string': query_string,
+        'start_time_s': '',
+        'end_time_s': '',
+        'execution_time_s': '',
+        'throughput': ''
+    }
